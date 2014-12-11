@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Owin.ForceHttps</id>
+    <version>1.0.0</version>
+    <title>OWIN Middleware for forcing HTTPS</title>
+    <authors>aaron-powell</authors>
+    <owners>readify aaron-powell</owners>
+    <licenseUrl>https://github.com/readify/Owin.ForceHttps/blob/master/Licence.md</licenseUrl>
+    <projectUrl>https://github.com/readify/Owin.ForceHttps</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>An OWIN middleware to force HTTPS on requests</description>
+    <releaseNotes>Initial release.</releaseNotes>
+    <copyright>Copyright 2014</copyright>
+    <tags>OWIN Katana HTTPS</tags>
+    <dependencies>
+        <dependency id="Microsoft.Owin" version="3.0.0" />
+    </dependencies>
+</metadata>
+  <files>
+      <file src="bin\Release\Owin.ForceHttps.dll" target="lib\net45" />
+  </files>
+</package>
