@@ -6,7 +6,7 @@ open Owin.ForceHttps
 
 type Startup() =
     member x.Configuration (app:IAppBuilder) =
-        app.UseForcedHttps(44300)
+        UseForcedHttps app 44300
 
         app.Run(fun ctx ->
             ctx.Response.ContentType <- "text/plain"

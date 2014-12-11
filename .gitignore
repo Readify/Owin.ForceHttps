@@ -18,3 +18,4 @@ csx/
 *.nupkg
 tools
 packaging
+*.ide/

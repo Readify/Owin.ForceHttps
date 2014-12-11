@@ -17,7 +17,7 @@ using Microsoft.Owin;
 namespace MyApplication {
     public class Startup {
         public void Configuration(IAppBuilder app) {
-            app.UseForcedHttps();
+            app.UseForcedHttps(443);
 
             //configure other middleware
         }
