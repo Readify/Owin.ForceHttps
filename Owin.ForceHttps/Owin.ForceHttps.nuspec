@@ -2,10 +2,10 @@
 <package >
   <metadata>
     <id>Owin.ForceHttps</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>OWIN Middleware for forcing HTTPS</title>
-    <authors>aaron-powell</authors>
-    <owners>readify aaron-powell</owners>
+    <authors>aaron.powell</authors>
+    <owners>readify,aaron.powell</owners>
     <licenseUrl>https://github.com/readify/Owin.ForceHttps/blob/master/Licence.md</licenseUrl>
     <projectUrl>https://github.com/readify/Owin.ForceHttps</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
