@@ -1,5 +1,5 @@
 ﻿[<System.Runtime.CompilerServices.Extension>]
-module Microsoft.Owin
+module Owin.ForceHttps
 
 open Microsoft.Owin
 open System
