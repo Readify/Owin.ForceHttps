@@ -1,23 +1,18 @@
-﻿[<System.Runtime.CompilerServices.Extension>]
-module Owin.ForceHttps
+﻿namespace Owin
 
-open Microsoft.Owin
-open System
-open System.Threading.Tasks
+[<System.Runtime.CompilerServices.Extension>]
+module ForceHttps =
+    open Microsoft.Owin
+    open System
+    open System.Threading.Tasks
 
-type Owin.IAppBuilder with
     [<System.Runtime.CompilerServices.Extension>]
-    member x.UseForcedHttps(port:int) =
-        let httpser (ctx:IOwinContext) (next:Func<Task>) =
+    let UseForcedHttps (app : Owin.IAppBuilder) (port : int) =
+        let httpser (ctx : IOwinContext) (next : Func<Task>) =
             match ctx.Request.Uri.Scheme with
-                | "http" ->
-                    sprintf "https://%s:%d%s" ctx.Request.Uri.Host port ctx.Request.Uri.PathAndQuery
-                        |> ctx.Response.Redirect
-                    next.Invoke()
-                | _ -> next.Invoke()
-
-        x.Use httpser |> ignore
-
-    [<System.Runtime.CompilerServices.Extension>]
-    member x.UseForcedHttps() =
-        x.UseForcedHttps(443)
+            | "http" ->
+                sprintf "https://%s:%d%s" ctx.Request.Uri.Host port ctx.Request.Uri.PathAndQuery
+                |> ctx.Response.Redirect
+                next.Invoke()
+            | _ -> next.Invoke()
+        app.Use httpser |> ignore
