@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Owin.ForceHttps</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <title>OWIN Middleware for forcing HTTPS</title>
     <authors>aaron.powell</authors>
     <owners>readify,aaron.powell</owners>
