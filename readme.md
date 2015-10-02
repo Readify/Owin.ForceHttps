@@ -5,7 +5,7 @@ A middleware to force HTTPS for OWIN applications.
 # Install
 
 ```ps
-PS> Install-Package Owin.ForcedHttps
+PS> Install-Package Owin.ForceHttps
 ```
 
 # Usage
