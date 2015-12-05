@@ -15,6 +15,7 @@
     <tags>OWIN Katana HTTPS</tags>
     <dependencies>
         <dependency id="Microsoft.Owin" version="3.0.0" />
+        <dependency id="FSharp.Core" version="4.0.0.1" />
     </dependencies>
 </metadata>
   <files>
